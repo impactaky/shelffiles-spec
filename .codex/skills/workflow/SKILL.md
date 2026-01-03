@@ -36,15 +36,6 @@ Confirm both lint and test pass.
 
 If they fail, fix issues and run lint and test again until they pass.
 
-```bash
-# Lint
-uv run ruff check . --fix
-uv run ruff format .
-
-# Test
-uv run pytest
-```
-
 ### 5. Commit Implementation
 
 Commit with `-m "openspec:apply for <feature>"`
