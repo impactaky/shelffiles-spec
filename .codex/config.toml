@@ -1,0 +1,16 @@
+[features]
+multi_agent = true
+
+[agents]
+max_threads = 4
+
+[agents.default]
+description = "General development tasks in this repository."
+
+[agents.programmer]
+description = "Implementation agent for code changes and task execution."
+config_file = "agents/programmer.toml"
+
+[agents.reviewer]
+description = "Read-only reviewer focused on regressions and missing tests."
+config_file = "agents/reviewer.toml"
