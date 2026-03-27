@@ -18,6 +18,10 @@
 - [ ] 2.1 <!-- Task description -->
 - [ ] 2.2 <!-- Task description -->
 
-## Undefined
+## Must Resolve
 
-- <!-- Open question, blocked validation, or intentionally undefined item -->
+- <!-- Critical gray area that must be resolved before this DoD is finalized -->
+
+## Deferred
+
+- <!-- Item that can remain unresolved without changing completion criteria -->

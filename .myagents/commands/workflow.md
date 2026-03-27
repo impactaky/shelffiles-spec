@@ -19,6 +19,9 @@ DoD report should be output in Japanese.
 
 - [ ] `.myagents/prompts/opsx-new.md <input>`
 - [ ] `.myagents/prompts/opsx-ff.md`
+- [ ] Loop until `Must Resolve` is empty.
+  - [ ] Wait for user review if `dod.md` has non-empty `Must Resolve`
+  - [ ] Update `dod.md` to resolve reviewed items
 - [ ] Loop these steps until verify and review pass. Up to 5 times.
   - [ ] `.myagents/prompts/opsx-apply.md` in `programmer` agent
   - [ ] `.myagents/prompts/opsx-verify.md` and review in `reviewer` agent
@@ -27,4 +30,3 @@ DoD report should be output in Japanese.
 - [ ] Wait user review. If you got feedback, rerun implementation loop
 - [ ] If there is a essential feedback, reflectiing feedback to `openspec/specs/dod-points/spec.md` to improve next run
 - [ ] `.myagents/prompts/opsx-archive.md`
-

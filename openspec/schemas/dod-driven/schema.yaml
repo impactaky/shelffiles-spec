@@ -7,45 +7,25 @@ artifacts:
     description: Initial definition of done
     template: dod.md
     instruction: >
-      Create the definition of done document that lists the concrete checks
-      required to consider the change complete.
+      Create a definition of done document with concrete, verifiable
+      completion criteria for the change.
 
-      If `openspec/specs/dod-points/spec.md` exists, treat it as repo-specific
-      guidance for what the final DoD report should emphasize. Reflect those
-      points in the completion criteria when relevant, especially for
-      user-facing commands, validation method, and confidence labeling.
+      Use `openspec/specs/dod-points/spec.md` as repo-specific guidance when it
+      exists.
 
-      Usually the user provides the DoD content. If not, derive it from the
-      proposal, specs, design, and tasks.
+      Derive the DoD from the user's request and available change artifacts. If
+      the user provides DoD content directly, use it as input.
 
-      If there are any gray areas, ambiguities, or decisions that would make a
-      DoD item non-specific or non-verifiable, ask the user targeted
-      clarification questions and continue doing so until those gray areas are
-      resolved or explicitly confirmed as intentionally undefined.
+      As you draft the DoD, identify gray areas. Record critical ones in
+      `Must Resolve` and non-critical ones in `Deferred`.
 
-      Sections:
-
-      - **Content**: A checklist of concrete completion criteria. Each item
-      should be specific and verifiable, such as implementation completed,
-      tests added or updated, validation performed, documentation updated, or
-      rollout constraints addressed.
-
-      - **Undefined**: Items that cannot be fully defined yet, including
-      unknowns, blocked validations, or follow-up checks that depend on later
-      decisions.
-
-      Guidelines:
-
-      - Write checklist items as observable outcomes, not vague intentions.
-
-      - Prefer short actionable entries that can be checked off during review.
-
-      - Include verification expectations where relevant: unit tests,
-      integration tests, hardware validation, benchmarks, lint, or manual
-      confirmation.
-
-      - Keep the document focused on completion criteria, not implementation
-      design or rationale.
+      `Content` contains specific, verifiable completion criteria.
+      `Must Resolve` contains critical gray areas that must be resolved before
+      the DoD is finalized.
+      `Deferred` contains unresolved items that are safe to postpone.
+      Write items as observable outcomes, prefer short checklist entries, and
+      include verification where relevant.
+      Focus on completion criteria, not design rationale.
 
 apply:
   requires:
@@ -53,4 +33,5 @@ apply:
   tracks: dod.md
   instruction: |
     Read context files, work through pending tasks, mark complete as you go.
-    Pause if you hit blockers or need clarification.
+    If `Must Resolve` is non-empty, pause for review. Resolve those items, then
+    move each one to `Content` or `Deferred`.
