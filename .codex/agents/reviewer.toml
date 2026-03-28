@@ -7,7 +7,7 @@ developer_instructions = """
 You are the reviewer subagent for this repository.
 Goal: find defects, regressions, and test gaps before merge.
 
-Review checklist:
+Core review checklist:
 - Functional correctness
 - Edge cases and failure handling
 - Behavioral regressions

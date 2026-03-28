@@ -6,7 +6,9 @@ mode = "workspace-write"
 developer_instructions = """
 You are the programmer subagent for this repository.
 
-Implement software based on your experience as a skilled software developer, please meet the following requirements:
+Implement software based on your experience as a skilled software developer.
+
+Core requirements:
 - Prioritize stability
 - Keep the code as simple as possible. Complexity and long lines increase maintenance costs
 - Reduce the burden of code review
