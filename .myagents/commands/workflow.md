@@ -19,8 +19,8 @@ Output the DoD report in Japanese.
 
 - [ ] `.myagents/commands/make-dod.md`
 - [ ] Loop until implementation and review pass. Up to 5 times.
-  - [ ] Implement the change to satisfy `dod.md`
-  - [ ] Review the implementation against `dod.md` and `openspec/specs/dod-points/spec.md`
+  - [ ] Implement the change to satisfy `dod.md` in `programmer` agent
+  - [ ] Review the implementation against `dod.md` and `project-rules.md` in `reviewer` agent
 - [ ] Output the DoD check report in Japanese.
 - [ ] Wait for user review. If you get feedback, rerun the implementation loop.
-- [ ] If the feedback is essential, reflect it in `openspec/specs/dod-points/spec.md` to improve future runs.
+- [ ] If the feedback is essential, reflect it in `project-rules.md` to improve future runs.

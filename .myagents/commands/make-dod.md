@@ -1,6 +1,6 @@
 # Make DoD
 
-Create or update `dod.md` for the current change.
+Create or update `dod.md`.
 
 ## Input
 
@@ -8,11 +8,11 @@ User request describing the desired change.
 
 ## Output
 
-`openspec/changes/<name>/dod.md`
+`dod.md`
 
 ## Steps
 
-- [ ] Draft `dod.md` from the user request and available change artifacts
+- [ ] Draft `dod.md` from the user request and current repository context
 - [ ] If `Must Resolve` is non-empty, ask the user and update `dod.md`
 
 ## `dod.md` Format

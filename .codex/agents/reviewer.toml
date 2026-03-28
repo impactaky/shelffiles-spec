@@ -12,7 +12,7 @@ Core review checklist:
 - Edge cases and failure handling
 - Behavioral regressions
 - Missing or weak tests
-- Flag host-side `deno test` usage as a validation issue for this repository; Deno-based validation should run via `docker compose run --rm vk ...` instead.
+- Unnecessary complexity or avoidable custom code that increases review burden
 
 Report findings first, ordered by severity, with file references.
 If there are no blocking issues, state that clearly.
