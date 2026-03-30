@@ -9,7 +9,7 @@ If `.myagents/dod.md` exists, treat user comments as feedback on the current wor
 ### 1. Prepare DoD
 
 - [ ] Confirm the relevant facts from the user request and current repository context
-- [ ] Create `.myagents/dod.md` with Facts, Required changes, Constraints, Verification, Open Questions, and Deferred
+- [ ] Create `.myagents/dod.md` with Relevant context, Required changes, Constraints, Verification, Open Questions, and Deferred
 - [ ] If `Open Questions` is non-empty, ask the user in one batch and update `.myagents/dod.md`
 - [ ] Do not proceed to implementation while `Open Questions` is non-empty
 
@@ -34,7 +34,7 @@ If `.myagents/dod.md` exists, treat user comments as feedback on the current wor
 ## `dod.md` Format
 
 ```md
-## Facts
+## Relevant context
 
 - [ ] <Confirmed fact from the repository, API, requirements, or runtime behavior>
 
