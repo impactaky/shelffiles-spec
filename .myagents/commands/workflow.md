@@ -24,4 +24,5 @@ Output the DoD report in Japanese.
   - [ ] Review the implementation against `dod.md` and `project-rules.md` in `reviewer` agent
 - [ ] Output the DoD check report in Japanese.
 - [ ] Wait for user review. If you get feedback, rerun the implementation loop.
+- [ ] `.myagents/commands/finalize-dod.md`
 - [ ] If the feedback is essential, reflect it in `project-rules.md` to improve future runs.

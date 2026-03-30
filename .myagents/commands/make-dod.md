@@ -8,7 +8,7 @@ User request describing the desired change.
 
 ## Output
 
-`dod.md`
+Working `dod.md`
 
 ## Steps
 
@@ -19,6 +19,7 @@ User request describing the desired change.
 - [ ] Put safe-to-postpone items in `Deferred`
 - [ ] If `Open Questions` is non-empty, ask the user in one batch and update the items
 - [ ] Write the final items to `dod.md`
+- [ ] Treat `dod.md` as the editable working copy until the workflow reaches finalization
 
 ## `dod.md` Format
 
@@ -53,3 +54,4 @@ User request describing the desired change.
 
 - Keep items specific and verifiable
 - Do not proceed to implementation while `Open Questions` is non-empty
+- Store the first complete draft at the repository root as `dod.md`
