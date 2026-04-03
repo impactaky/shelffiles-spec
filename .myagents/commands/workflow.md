@@ -9,10 +9,8 @@ If `.myagents/dod.md` exists, treat user comments as feedback on the current wor
 ### 1. Prepare DoD
 
 - [ ] Confirm the relevant facts from the user request and current repository context
-- [ ] Create `.myagents/dod.md` with Relevant context, Required changes, Constraints, Verification, Open Questions, and Deferred
-
-If `Open Questions` is non-empty, ask the user in one batch and update `.myagents/dod.md`.
-Do not proceed to implementation while `Open Questions` is non-empty.
+- [ ] If critical ambiguity remains, ask the user in one batch before implementation
+- [ ] Create `.myagents/dod.md` with Relevant context, Required changes, Constraints, Verification, and Deferred
 
 ### 2. Implement And Review
 
@@ -30,7 +28,6 @@ Repeat until implementation and review pass, up to 5 times.
 ### 4. Finalize
 
 - [ ] Update `.myagents/dod.md` to match the final result
-- [ ] Ensure `Open Questions` is empty
 - [ ] Save a copy to `.myagents/artifacts/dod/<task-summary>-<YYYYMMDD-HHMMSS>.md`
 
 ## `dod.md` Format
@@ -51,10 +48,6 @@ Repeat until implementation and review pass, up to 5 times.
 ## Verification
 
 - [ ] <Command, test, manual check, or review point that confirms the change is correct>
-
-## Open Questions
-
-- <Critical ambiguity that blocks confirmation, change design, or verification>
 
 ## Deferred
 
