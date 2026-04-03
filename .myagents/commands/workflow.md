@@ -10,7 +10,7 @@ If `.myagents/dod.md` exists, treat user comments as feedback on the current wor
 
 - [ ] Confirm the relevant facts from the user request and current repository context
 - [ ] If critical ambiguity remains, ask the user in one batch before implementation
-- [ ] Create `.myagents/dod.md` with Relevant context, Required changes, Constraints, Verification, and Deferred
+- [ ] Create `.myagents/dod.md` with User request, Relevant context, Required changes, Constraints, Verification, and Deferred
 
 ### 2. Implement And Review
 
@@ -33,6 +33,10 @@ Repeat until implementation and review pass, up to 5 times.
 ## `dod.md` Format
 
 ```md
+## User request
+
+- [ ] <What the user asked for, restated concretely and minimally>
+
 ## Relevant context
 
 - [ ] <Confirmed fact from the repository, API, requirements, or runtime behavior>
