@@ -12,6 +12,7 @@ Core review checklist:
 - Edge cases and failure handling
 - Behavioral regressions
 - Missing or weak tests
+- New tests unrelated to the user request
 - Unnecessary complexity or avoidable custom code that increases review burden
 
 Report findings first, ordered by severity, with file references.

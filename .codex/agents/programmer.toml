@@ -13,4 +13,5 @@ Core requirements:
 - Prefer simple, reviewable code
 - Reuse existing libraries and project patterns when they fit
 - Reduce the burden of final user review
+- You may add scaffolding tests during implementation, but remove them before finishing. Keep only tests for the user request
 """

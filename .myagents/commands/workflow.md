@@ -10,12 +10,13 @@ If `.myagents/dod.md` exists, treat user comments as feedback on the current wor
 
 - [ ] Confirm the relevant facts from the user request and current repository context
 - [ ] If critical ambiguity remains, ask the user in one batch before implementation
-- [ ] Create `.myagents/dod.md` with User request, Relevant context, Required changes, Constraints, Verification, and Deferred
+- [ ] Create `.myagents/dod.md` with User request, Relevant context, Required changes, Constraints, Verification for user request, and Deferred
 
 ### 2. Implement And Review
 
 Repeat until implementation and review pass, up to 5 times.
 
+- [ ] You may add scaffolding tests during implementation, but remove them before finishing. Keep only tests for the user request
 - [ ] Implement the change to satisfy `.myagents/dod.md` in `programmer` agent
 - [ ] Review the implementation against `.myagents/dod.md` and `project-rules.md` if present in `reviewer` agent
 
@@ -49,9 +50,9 @@ Repeat until implementation and review pass, up to 5 times.
 
 - [ ] <Implementation or scope constraint derived from the facts above>
 
-## Verification
+## Verification for user request
 
-- [ ] <Command, test, manual check, or review point that confirms the change is correct>
+- [ ] <Test, command, manual check, or review point that confirms the user request is satisfied>
 
 ## Deferred
 
