@@ -1,7 +1,7 @@
 # Project Rules
 
-Use this file only for project-specific rules when writing or reviewing a DoD report.
-Put generic workflow or generic `dod.md` structure rules in `.myagents/commands/`.
+Keep only project-specific rules here.
+Write each rule with enough scope and context to apply it correctly.
 
 ## Must
 
