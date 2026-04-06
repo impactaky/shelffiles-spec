@@ -52,9 +52,9 @@ Repeat until implementation and review pass, up to 5 times.
 
 - [ ] Output the user review report in Japanese
 - [ ] If the user requests follow-up changes, rerun Step 2
-- [ ] If needed, update `project-rules.md` before rerunning Step 2
+- [ ] If follow-up fixes a reusable review issue, update `project-rules.md` before rerunning Step 2
 
-#### User Reposrt format
+#### User Review Format
 
 ```md
 ## Review report
@@ -78,4 +78,3 @@ Repeat until implementation and review pass, up to 5 times.
 ### 4. Archive
 
 - [ ] Save the LGTM report to `.myagents/artifacts/review/<task-summary>-<YYYYMMDD-HHMMSS>.md`
-
