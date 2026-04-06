@@ -13,6 +13,4 @@ Write each rule with enough scope and context to apply it correctly.
 
 ## Preferences
 
-Project-specific implementation preferences.
-
 <!-- - Prefer: Project-specific implementation preference -->
